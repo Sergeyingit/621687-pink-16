@@ -10,18 +10,18 @@
         <img class="page-header__logo-image" src="#" width="1" height="1" alt="pink">
       </a>
       <button class="navigation-toggle page-header__toggle" type="button">Открыть меню</button>
-      <nav class="page-navigation">
-        <ul class="page-navigation__list">
-          <li class="page-navigation__item">
+      <nav class="main-navigation">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
             <a>Главная</a>
           </li>
-          <li class="page-navigation__item">
+          <li class="site-list__item">
             <a href="#">Фотографии</a>
           </li>
-          <li class="page-navigation__item">
+          <li class="site-list__item">
             <a href="#">Конкурс</a>
           </li>
-          <li class="page-navigation__item">
+          <li class="site-list__item">
             <a href="#">Html academy</a>
           </li>
         </ul>
@@ -33,15 +33,15 @@
         <h2 class="visually-hidden">Скачать приложение</h2>
         <div class="download__content">
           <a class="download__button" href="#">Скачать приложение</a>
-          <ul class="download__list-icons">
+          <ul class="download-list download__list-link">
             <li>
-              <a class="download__item-icon download__item-icon--apple" href="#" alt="Скачать для ios"></a>
+              <a class="download-list__item download-list__item--apple" href="#" alt="Скачать для ios"></a>
             </li>
             <li>
-              <a  class="download__item-icon download__item-icon--android" href="#" alt="Скачать для android"></a>
+              <a  class="download-list__item download-list__item--android" href="#" alt="Скачать для android"></a>
             </li>
             <li>
-              <a  class="download__item-icon download__item-icon--windows" href="#" alt="Скачать для windows phone"></a>
+              <a  class="download-list__item download-list__item--windows" href="#" alt="Скачать для windows phone"></a>
             </li>
           </ul>
           <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -49,65 +49,108 @@
       </section>
       <section class="purpose">
         <h2 class="visually-hidden">Назначение приложения Pink</h2>
-        <div class="introduction">
-          <p class="introduction__text">Устали от серости мегаполиса?</p>
-          <p class="introduction__text">Нам есть, что вам предложить!</p>
+        <div class="intro purpose__intro">
+          <p class="intro__text intro__text--index">Устали от серости мегаполиса?</p>
+          <p class="intro__text intro__text--index">Нам есть, что вам предложить!</p>
         </div>
-        <ul class="purpose__list">
-          <li class="purpose__item">
-            <h3 class="purpose__title">Поднимает настроение</h3>
-            <p class="purpose__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <ul class="capability-list purpose__list">
+          <li class="capability-list__item">
+            <h3 class="capability__title">Поднимает настроение</h3>
+            <p class="capability__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="purpose__item">
-            <h3 class="purpose__title">Меняет мир вокруг</h3>
-            <p class="purpose__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="capability-list__item">
+            <h3 class="capability__title">Меняет мир вокруг</h3>
+            <p class="capability__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="purpose__item">
-            <h3 class="purpose__title">Заводит новых друзей</h3>
-            <p class="purpose__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <li class="capability-list__item">
+            <h3 class="capability__title">Заводит новых друзей</h3>
+            <p class="capability__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </section>
       <section class="reviews">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <h3 class="reviews__author">Николай Петров</h3>
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </li>
-          <li class="reviews__item">
-            <h3 class="reviews__author"></h3>
-            <p class="reviews__text"></p>
-          </li>
-          <li class="reviews__item">
-            <h3 class="reviews__author"></h3>
-            <p class="reviews__text"></p>
-          </li>
-        </ul>
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author">Николай Петров</cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author"></cite>
+              <p class="reviews__text"></p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author"></cite>
+              <p class="reviews__text"></p>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
+          </p>
+        </div>
       </section>
       <section class="price">
-
+        <div class="price__wrapper slider">
+          <table>
+            <tbody>
+              <tr>
+                <td class="price__tariff">
+                  <p class="price__tariff-name">Стандарт</p>
+                  <p class="price__tariff-value">3,99 USD</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="price__function">
+                  <p class="price__function-name">Розовый фильтр</p>
+                  <p class="price__function-value visually-hidden">Есть</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="price__function">
+                  <p class="price__function-name">Смайлики</p>
+                  <p class="price__function-value visually-hidden">Есть</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="price__function">
+                  <p class="price__function-name">Комментарии</p>
+                  <p class="price__function-value visually-hidden">Есть</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="price__toggles slider__toggles">
+            <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
+          </p>
+        </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="intro contacts__intro">
+          <p class="intro__text intro__text--index">Остались вопросы? Свяжитесь с нами!</p>
+        </div>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <h3 class="contacts__title">Звоните:</h3>
+            <p class="contacts__title">Звоните:</p>
             <p class="contacts__data">+7 (812) 555-66-66</p>
           </li>
           <li class="contacts__item">
-            <h3 class="contacts__title">Пишите:</h3>
+            <p class="contacts__title">Пишите:</p>
             <p class="contacts__data">mail@htmlacademy.ru</p>
           </li>
           <li class="contacts__item">
-            <h3 class="contacts__title">Приезжайте в гости:</h3>
+            <p class="contacts__title">Приезжайте в гости:</p>
             <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
       </section>
       <section class="map">
-
+        <img src="#" width="1" height="1" alt="ул. Большая Конюшенная, 19/8">
       </section>
     </main>
   </body>
