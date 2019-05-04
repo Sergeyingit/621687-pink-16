@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("Open Sans Regular"),
+    url("../../fonts/opensans.woff") format("woff"),
+    url("../../fonts/opensans.woff2") format("woff2");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("Open Sans Light"),
+    url("../../fonts/opensanslight.woff") format("woff"),
+    url("../../fonts/opensanslight.woff2") format("woff2");
+  font-weight: light;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("Open Sans Bold"),
+    url("../../fonts/opensansbold.woff") format("woff"),
+    url("../../fonts/opensansbold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Open Sans", "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  width: 320px;
+  margin: 0 auto;
+}

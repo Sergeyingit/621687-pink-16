@@ -1,0 +1,46 @@
+.photo-list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 280px;
+}
+
+.photo-list--panorama {
+  width: 320px;
+}
+
+.photo-list__text {
+  background-color: #f2f2f2;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.photo-list__author {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #283645;
+  margin: 0;
+}
+
+.photo-list__time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.photo-list__comment {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+}
+
+.photo-list__sum {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #d22856;
+}
