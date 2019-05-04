@@ -3,43 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link  rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="#" width="1" height="1" alt="pink">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
       </a>
-      <button class="navigation-toggle page-header__toggle" type="button">Открыть меню</button>
       <nav class="main-navigation">
+        <button class="navigation-toggle main-navigation__toggle" type="button">Открыть меню</button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
-            <a>Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Фотографии</a>
+            <a class="site-list__link site-list__link--active" href="#">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Html academy</a>
+            <a class="site-list__link" href="#">Html academy</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="page-container">
-      <div class="photo-page-title">
-        <h1 class="photo-page-title__text">Фотографии пользователей</h1>
+    <main class="page-main">
+      <div class="page-title page-title--photo">
+        <h1 class="page-title__text">Фотографии пользователей</h1>
       </div>
       <section class="gallery">
         <div class="intro gallery__intro">
           <p class="intro__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
-        <ul class="photo-list">
+        <ul class="photo-list photo-list--panorama">
           <li class="photo-list__item">
-            <img src="#" width="1" height="1" alt="pic1">
+            <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="pic1">
             <div class="photo-list__text">
-              <p class="photo-list__author">Анна (5 минут назад)</p>
+              <p class="photo-list__author">Анна <span class="photo-list__time">(5 минут назад)</span></p>
               <P class="photo-list__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</P>
               <div class="photo-list__likes">
                 <button class="photo-list__button" type="button"><span class="vissualy-hidden">Поставить лайк</span></button>
@@ -50,9 +51,9 @@
         </ul>
         <ul class="photo-list">
           <li class="photo-list__item">
-            <img src="#" width="1" height="1" alt="pic2">
+            <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="pic2">
             <div class="photo-list__text">
-              <p class="photo-list__author">Левон (5 часов назад)</p>
+              <p class="photo-list__author">Левон <span class="photo-list__time">5 часов назад)</span></p>
               <P class="photo-list__comment">Вчера он на луну летал, сегодня в руки к нам попал.</P>
               <div class="photo-list__likes">
                 <button class="photo-list__button" type="button"><span class="vissualy-hidden">Поставить лайк</span></button>
@@ -61,9 +62,9 @@
             </div>
           </li>
           <li class="photo-list__item">
-            <img src="#" width="1" height="1" alt="pic3">
+            <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="pic3">
             <div class="photo-list__text">
-              <p class="photo-list__author">Антон (12 часов назад)</p>
+              <p class="photo-list__author">Антон <span class="photo-list__time">(12 часов назад)</span></p>
               <P class="photo-list__comment">Соседи будут рады!</P>
               <div class="photo-list__likes">
                 <button class="photo-list__button" type="button"><span class="vissualy-hidden">Поставить лайк</span></button>
@@ -72,9 +73,9 @@
             </div>
           </li>
           <li class="photo-list__item">
-            <img src="#" width="1" height="1" alt="pic4">
+            <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="pic4">
             <div class="photo-list__text">
-              <p class="photo-list__author">Борис (20 часов назад)</p>
+              <p class="photo-list__author">Борис <span class="photo-list__time">(20 часов назад)</span></p>
               <P class="photo-list__comment">Здесь могла быть ваша цитата о высоком и вечном.</P>
               <div class="photo-list__likes">
                 <button class="photo-list__button" type="button"><span class="vissualy-hidden">Поставить лайк</span></button>
@@ -83,9 +84,9 @@
             </div>
           </li>
           <li class="photo-list__item">
-            <img src="#" width="1" height="1" alt="pic5">
+            <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="pic5">
             <div class="photo-list__text">
-              <p class="photo-list__author">Сергей (25 часов назад)</p>
+              <p class="photo-list__author">Сергей <span class="photo-list__time">(25 часов назад)</span></p>
               <P class="photo-list__comment">Самая кубанская в мире!</P>
               <div class="photo-list__likes">
                 <button class="photo-list__button" type="button"><span class="vissualy-hidden">Поставить лайк</span></button>
@@ -94,9 +95,9 @@
             </div>
           </li>
           <li class="photo-list__item">
-            <img src="#" width="1" height="1" alt="pic6">
+            <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="pic6">
             <div class="photo-list__text">
-              <p class="photo-list__author">Максим (40 часов назад)</p>
+              <p class="photo-list__author">Максим <span class="photo-list__time">(40 часов назад)</span></p>
               <P class="photo-list__comment">Где снег-то?</P>
               <div class="photo-list__likes">
                 <button class="photo-list__button" type="button"><span class="vissualy-hidden">Поставить лайк</span></button>
@@ -105,9 +106,9 @@
             </div>
           </li>
           <li class="photo-list__item">
-            <img src="#" width="1" height="1" alt="pic7">
+            <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="pic7">
             <div class="photo-list__text">
-              <p class="photo-list__author">Надежда (45 часов назад)</p>
+              <p class="photo-list__author">Надежда <span class="photo-list__time">(45 часов назад)</span></p>
               <P class="photo-list__comment">Всем GM и взаимные лайки!</P>
               <div class="photo-list__likes">
                 <button class="photo-list__button" type="button"><span class="vissualy-hidden">Поставить лайк</span></button>
@@ -120,10 +121,10 @@
       <section class="upload">
         <h2 class="visually-hidden">Форма загрузки фотографий</h2>
         <div class="intro upload__intro">
-          <p class="upload__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="intro__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <form class="upload__filters" action="https://echo.htmlacademy.ru" method="POST">
-          <img class="upload__image" src="#" width="1" height="1" alt="Изображение пользователя">
+          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Изображение пользователя">
           <div class="controls upload__controls">
             <div class="controls__item controls__item--crop">
               <div class="controls__item controls__item--scale"></div>
@@ -145,7 +146,7 @@
     </main>
     <footer class="footer">
       <a class="footer__logo">
-        <img class="footer__logo-image" src="#" width="1" height="1" alt="pink">
+        <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="pink">
       </a>
       <div class="social">
         <ul class="social__list">

@@ -3,45 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link  rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="#" width="1" height="1" alt="pink">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
       </a>
-      <button class="navigation-toggle page-header__toggle" type="button">Открыть меню</button>
       <nav class="main-navigation">
+        <button class="navigation-toggle main-navigation__toggle" type="button">Открыть меню</button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
-            <a>Главная</a>
+            <a class="site-list__link site-list__link--active">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Html academy</a>
+            <a class="site-list__link" href="#">Html academy</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="page-container">
-      <h1 class="visually-hidden">Информация о приложении</h1>
+    <main class="page-main">
+      <div class="page-title page-title--index">
+        <h1 class="visually-hidden">Информация о приложении</h1>
+      </div>
       <section class="download">
         <h2 class="visually-hidden">Скачать приложение</h2>
         <div class="download__content">
-          <a class="download__button" href="#">Скачать приложение</a>
-          <ul class="download-list download__list-link">
+          <a class="download__button button" href="#">Скачать приложение</a>
+          <ul class="download__list">
             <li>
-              <a class="download-list__item download-list__item--apple" href="#"><span class="visually-hidden">Скачать для ios</span></a>
+              <a class="download__item download__item--apple" href="#"><span class="visually-hidden">Скачать для ios</span></a>
             </li>
             <li>
-              <a  class="download-list__item download-list__item--android" href="#"><span class="visually-hidden">Скачать для android</span></a>
+              <a  class="download__item download__item--android" href="#"><span class="visually-hidden">Скачать для android</span></a>
             </li>
             <li>
-              <a  class="download-list__item download-list__item--windows" href="#"><span class="visually-hidden">Скачать для windows phone</span></a>
+              <a  class="download__item download__item--windows" href="#"><span class="visually-hidden">Скачать для windows phone</span></a>
             </li>
           </ul>
           <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -53,18 +56,18 @@
           <p class="intro__text intro__text--index">Устали от серости мегаполиса?</p>
           <p class="intro__text intro__text--index">Нам есть, что вам предложить!</p>
         </div>
-        <ul class="capability-list purpose__list">
-          <li class="capability-list__item">
-            <h3 class="capability__title">Поднимает настроение</h3>
-            <p class="capability__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <ul class="purpose__list">
+          <li class="purpose__item">
+            <h3 class="purpose__title">Поднимает настроение</h3>
+            <p class="purpose__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="capability-list__item">
-            <h3 class="capability__title">Меняет мир вокруг</h3>
-            <p class="capability__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="purpose__item">
+            <h3 class="purpose__title">Меняет мир вокруг</h3>
+            <p class="purpose__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="capability-list__item">
-            <h3 class="capability__title">Заводит новых друзей</h3>
-            <p class="capability__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <li class="purpose__item">
+            <h3 class="purpose__title">Заводит новых друзей</h3>
+            <p class="purpose__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </section>

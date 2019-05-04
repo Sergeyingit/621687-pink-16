@@ -1,0 +1,27 @@
+.page-title {
+  height: 171px;
+  background-color: #283645;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -65px;
+}
+
+.page-title__text {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.page-title--index {
+  height: 394px;
+  background-image: url("../../img/iphone-hand-mobile@1x.png"),
+    url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat,
+    no-repeat;
+  background-position: 0 bottom,
+    center;
+}
