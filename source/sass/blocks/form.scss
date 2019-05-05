@@ -1,0 +1,91 @@
+.form__group-container {
+  background-color: #f2f2f2;
+}
+
+.form__group {
+  border: none;
+  padding: 40px 0;
+  margin: 0 auto;
+  width: 280px;
+  background-color: #ffffff;
+}
+
+.form__group--achievement {
+  background-color: #f2f2f2;
+  padding: 0;
+}
+
+.form__group--app {
+  background-color: #f2f2f2;
+  padding: 0;
+}
+
+.form__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form__title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d22856;
+  text-align: center;
+  width: 230px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 40px;
+}
+
+.form__label {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  display: block;
+  padding: 20px 0;
+}
+
+.form__label--title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d22856;
+  display: block;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.form__info {
+  width: 280px;
+  height: 60px;
+  padding: 15px;
+}
+
+.form__info::placeholder,
+.form__comment::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  opacity: 1;
+}
+
+.form__comment {
+  width: 280px;
+  height: 200px;
+  padding: 15px;
+}
+
+.form__note {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  text-transform: uppercase;
+  width: 200px;
+  margin: 0 auto;
+}

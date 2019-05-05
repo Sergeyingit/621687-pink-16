@@ -18,4 +18,14 @@
   width: 100%;
   display: block;
   padding: 5px 0;
+  cursor: pointer;
+}
+
+.site-list__link:hover,
+.site-list__link:focus {
+  color: #d22856;
+}
+
+.site-list__link:active {
+  color: rgba(#d22856, 0.3%);
 }
