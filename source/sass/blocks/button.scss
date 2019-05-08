@@ -31,3 +31,10 @@
   border: none;
   border-radius: 2px;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 300px;
+    background-color: transparent;
+  }
+}
