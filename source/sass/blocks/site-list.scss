@@ -3,6 +3,8 @@
   margin: 0;
   list-style: none;
   background-color: #283645;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-list__item {
@@ -28,4 +30,11 @@
 
 .site-list__link:active {
   color: rgba(#d22856, 0.3%);
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

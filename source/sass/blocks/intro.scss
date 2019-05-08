@@ -1,5 +1,6 @@
 .intro {
   background-color: #ffffff;
+  padding: 20px 0;
 }
 
 .intro__text {
@@ -23,4 +24,19 @@
 
 .intro__text--form {
   width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    min-width: 660px;
+  }
+
+  .intro__text--index {
+    width: 660px;
+    padding: 0;
+  }
+
+  .intro__text--index:last-child {
+    width: 340px;
+  }
 }

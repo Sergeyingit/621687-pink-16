@@ -1,5 +1,11 @@
 .reviews {
   background-color: #ffffff;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.reviews__item {
+  margin: 0;
 }
 
 .reviews__author {
@@ -20,4 +26,8 @@
   width: 270px;
   margin: 0 auto;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  width: 660px;
 }
