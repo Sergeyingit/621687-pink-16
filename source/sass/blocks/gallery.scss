@@ -1,0 +1,26 @@
+.gallery__intro {
+  padding-top: 39px;
+  padding-bottom: 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .gallery__intro {
+    padding-top: 87px;
+    padding-bottom: 72px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__wrapper {
+    width: 940px;
+  }
+
+  .gallery__intro {
+    padding-bottom: 85px;
+  }
+}

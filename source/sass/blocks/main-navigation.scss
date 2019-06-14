@@ -2,17 +2,111 @@
   background-color: #283645;
   //width: 320px;
   //margin: 0 auto;
+  position: relative;
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  top: -45px;
+  right: 20px;
+  width: 50px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.main-navigation--closed .main-navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 9px 0 0 #ffffff,
+    0 18px 0 0 #ffffff;
+}
+
+.main-navigation--closed .main-navigation__toggle:hover::before,
+.main-navigation--closed .main-navigation__toggle:focus::before {
+  background-color: #d22856;
+  box-shadow: 0 9px 0 0 #d22856,
+    0 18px 0 0 #d22856;
+}
+
+.main-navigation--closed .main-navigation__toggle:active::before {
+  background-color: rgba(#d22856, 0.3);
+  box-shadow: 0 9px 0 0 rgba(#d22856, 0.3),
+    0 18px 0 0 rgba(#d22856, 0.3);
+}
+
+.main-navigation--opened .main-navigation__toggle::before,
+.main-navigation--opened .main-navigation__toggle::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 30px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.main-navigation--opened .main-navigation__toggle::before {
+  transform: rotate(45deg);
+}
+
+.main-navigation--opened .main-navigation__toggle::after {
+  transform: rotate(-45deg);
+}
+
+.main-navigation--opened .main-navigation__toggle:hover::before,
+.main-navigation--opened .main-navigation__toggle:hover::after,
+.main-navigation--opened .main-navigation__toggle:focus::before,
+.main-navigation--opened .main-navigation__toggle:focus::after {
+  background-color: #d22856;
+}
+
+.main-navigation--opened .main-navigation__toggle:active::before,
+.main-navigation--opened .main-navigation__toggle:active::after {
+  background-color: rgba(#d22856, 0.3);
 }
 
 @media (min-width: $tablet-width) {
   .main-navigation {
     //width: 660px;
   }
+
+  .main-navigation__toggle {
+    top: -65px;
+  }
+}
+
+@media (max-width: $mobile-tablet-width-only) {
+  .main-navigation--closed .site-list {
+    display: none;
+  }
+
+  .main-navigation--opened .site-list {
+    display: block;
+  }
+
+  .main-navigation--nojs .site-list {
+    display: block;
+  }
+
+  .main-navigation--nojs .main-navigation__toggle {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-navigation {
-    width: 700px;
     margin: 0;
+    background-color: transparent;
+  }
+
+  .main-navigation__toggle {
+    display: none;
   }
 }

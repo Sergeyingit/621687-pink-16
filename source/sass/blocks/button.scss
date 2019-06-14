@@ -8,9 +8,20 @@
   display: block;
   width: 280px;
   border: 3px solid #ffffff;
-  border-radius: 25px;
+  border-radius: 30px;
   margin: 0 auto;
   padding: 16px;
+}
+
+.button--download:hover,
+.button--download:focus {
+  color: #d22856;
+  background-color: #ffffff;
+}
+
+.button--download:active {
+  color: rgba(#d22856, 0.3);
+  background-color: #ffffff;
 }
 
 .button--submit {
@@ -19,14 +30,38 @@
   border: 3px solid #d22856;
 }
 
+.button--submit:hover,
+.button--submit:focus {
+  color: #ffffff;
+  background-color: #d22856;
+}
+
+.button--submit:active {
+  color: rgba(#ffffff, 0.3);
+}
+
 .button--reset {
-  color: rgba(#283645, 0.1%);
+  color: rgba(#283645, 0.1);
   background-color: #f2f2f2;
-  border: 3px solid rgba(#283645, 0.1%);
+  border: 3px solid rgba(#283645, 0.1);
+}
+
+.button--reset:hover,
+.button--reset:focus {
+  color: rgba(#283645, 0.3);
+  border: 3px solid rgba(#283645, 0.3);
+}
+
+.button--reset:active {
+  background-color: #283645;
+  color: rgba(#ffffff, 0.3);
+  border: 3px solid #283645;
+  opacity: 0.3;
 }
 
 .button--form {
   line-height: 30px;
+  text-transform: uppercase;
   background-color: #2aab6d;
   border: none;
   border-radius: 2px;
@@ -36,5 +71,27 @@
   .button {
     width: 300px;
     background-color: transparent;
+  }
+
+  .button--form {
+    background-color: #2aab6d;
+  }
+
+  .button--submit {
+    width: 260px;
+  }
+
+  .button--reset {
+    width: 260px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--submit {
+    width: 182px;
+  }
+
+  .button--reset {
+    width: 182px;
   }
 }
