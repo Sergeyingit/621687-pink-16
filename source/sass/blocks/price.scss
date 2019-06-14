@@ -1,8 +1,4 @@
 .price {
-  // width: 320px;
-  // margin: 0 auto;
-  // overflow: hidden;
-  // padding-top: 90px;
   background-color: #f2f2f2;
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -156,14 +152,8 @@
 
 
 @media (min-width: $tablet-width) {
-  // .price {
-  //   width: auto;
-  //   margin: 0;
-  // }
-
   .price__wrapper {
     width: 620px;
-    // margin: 0 auto;
     padding: 0;
     padding-top: 87px;
     padding-bottom: 68px;
@@ -230,14 +220,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  // .price {
-  //   width: auto;
-  //   margin: 0;
-  // }
-
   .price__wrapper {
     width: 940px;
-    // margin: 0 auto;
     padding-top: 146px;
     padding-bottom: 93px;
   }

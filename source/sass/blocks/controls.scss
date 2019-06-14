@@ -10,16 +10,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
 .controls__item {
   width: 48px;
   height: 48px;
-}
-
-.controls__item--active {
-  fill: #d22856;
 }
 
 .controls__item--contrast {
@@ -74,6 +69,10 @@
   .controls__item:focus {
     fill: rgba(#283645, 0.5);
   }
+
+  .controls__item--active {
+    fill: #d22856;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -121,24 +120,15 @@
     width: 202px;
   }
 
-  // .controls__item {
-  //   fill: #d22856;
-  // }
-
   .controls__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 275px;
-    //padding: 25px 0;
     padding-right: 18px;
     border-bottom: 1px solid #dddfe0;
     fill: #d22856;
   }
-
-  // .controls__item:nth-child(1) {
-  //   padding-top: 17px;
-  // }
 
   .controls__item--crop .controls__toggle {
     right: 42px;

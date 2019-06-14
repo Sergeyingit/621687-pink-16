@@ -1,7 +1,5 @@
 .purpose {
   background-color: #ffffff;
-  // width: 320px;
-  // margin: 0 auto;
 }
 
 .purpose__container-background {
@@ -17,11 +15,6 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
-  // background-color: #f2f2f2;
-  // background-image: url("../../img/bg-triangle-white.svg");
-  // background-repeat: no-repeat;
-  // background-position: center 0;
-  // background-size: 100%;
 }
 
 .purpose__wrapper::after {
@@ -113,11 +106,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  // .purpose {
-  //   width: auto;
-  //   margin: 0;
-  // }
-
   .purpose__wrapper {
     width: 940px;
   }
@@ -134,10 +122,6 @@
   .purpose__item {
     width: 230px;
   }
-
-  // .purpose__item:nth-child(2) {
-  //   width: 230px;
-  // }
 
   .purpose__title {
     font-size: 30px;

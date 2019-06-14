@@ -1,7 +1,5 @@
 .download {
   background-color: #1d2631;
-  //width: 320px;
-  //margin: 0 auto;
 }
 
 .download::before {
@@ -14,7 +12,6 @@
     no-repeat;
   background-position: 0 bottom,
     bottom center;
-  //background-size: auto, cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/iphone-hand-mobile@2x.png"),
@@ -96,7 +93,6 @@
   }
 
   .download {
-    //background-color: transparent;
     width: auto;
     height: 730px;
     background-image: url("../../img/iphone-hand-tablet@1x.png"),
