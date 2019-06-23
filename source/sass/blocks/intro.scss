@@ -1,6 +1,7 @@
 .intro {
   background-color: #ffffff;
-  padding: 20px 0;
+  padding-top: 40px;
+  padding-bottom: 35px;
 }
 
 .intro__text {
@@ -11,32 +12,99 @@
   background-color: #ffffff;
   width: 240px;
   margin: 0 auto;
-  padding: 20px 0;
   text-align: center;
+}
+
+.intro__text span {
+  display: none;
 }
 
 .intro__text--index {
   font-size: 24px;
   font-weight: 300;
   width: 280px;
-  padding: 20px 0;
+  padding: 0;
+}
+
+.intro__text--index-one {
+  margin-bottom: 25px;
+}
+
+.intro__text--photo {
+  padding: 4px 0;
 }
 
 .intro__text--form {
   width: 280px;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .intro {
     min-width: 660px;
+    padding-top: 46px;
+    padding-bottom: 48px;
+  }
+
+  .intro__text {
+    font-size: 18px;
+    width: 500px;
+  }
+
+  .intro__text span {
+    display: block;
   }
 
   .intro__text--index {
-    width: 660px;
+    font-size: 40px;
+    line-height: 48px;
+    width: 620px;
     padding: 0;
   }
 
-  .intro__text--index:last-child {
+  .intro__text--index-one {
+    margin-bottom: 0;
+  }
+
+  .intro__text--index-two {
     width: 340px;
+  }
+
+  .intro__text--index-contacts {
+    width: 500px;
+  }
+
+  .intro__text--form {
+    padding-top: 48px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    padding-top: 67px;
+    padding-bottom: 78px;
+  }
+
+  .intro__text--index {
+    font-size: 50px;
+    line-height: 60px;
+    width: 820px;
+  }
+
+  .intro__text--index:last-child {
+    width: 640px;
+  }
+
+  .intro__text {
+    width: 750px;
+    margin: 0 auto;
+  }
+
+  .intro__text span {
+    display: inline-block;
+  }
+
+  .intro__text--photo {
+    width: 600px;
   }
 }

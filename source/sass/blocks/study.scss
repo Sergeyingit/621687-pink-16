@@ -1,0 +1,137 @@
+.study {
+  display: none;
+}
+
+.study__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.study__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+  margin-bottom: 8px;
+}
+
+.study__link {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #d22856;
+  text-decoration: underline;
+}
+
+@media (min-width: $tablet-width) {
+  .study {
+    display: block;
+    padding: 60px 0;
+    margin-bottom: 20px;
+  }
+
+  .study__container-column {
+    width: 310px;
+    margin-left: 310px;
+    padding-top: 35px;
+  }
+
+  .study__wrapper {
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .study__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 238px;
+    height: 276px;
+    background-image: url("../../img/icon-timer.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .study__wrapper::after {
+    content: "24";
+    position: absolute;
+    top: 55px;
+    left: 18px;
+    width: 202px;
+    height: 202px;
+    background-image: url("../../img/icon-editor-diagram-fill.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 96px;
+    line-height: 190px;
+    font-weight: 700;
+    color: #d22856;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .study {
+    background-color: #f2f2f2;
+    padding-top: 24px;
+    padding-bottom: 112px;
+    margin-bottom: 73px;
+  }
+
+  .study__wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .study__wrapper::before {
+    width: 298px;
+    height: 345px;
+  }
+
+  .study__wrapper::after {
+    top: 70px;
+    left: 23px;
+    width: 253px;
+    height: 253px;
+    font-size: 120px;
+    line-height: 236px;
+  }
+
+  .study__container-column {
+    width: 500px;
+    margin-left: 366px;
+    padding-top: 91px;
+  }
+
+  .study__title br {
+    display: none;
+  }
+
+  .study__title {
+    margin-bottom: 21px;
+  }
+
+  .study__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .study__text br {
+    display: none;
+  }
+
+  .study__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

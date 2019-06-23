@@ -1,6 +1,48 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: #283645;
+  margin: 0;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.copyright__logo {
+  width: 26px;
+  height: 34px;
+  fill: #d22856;
+}
+
+.copyright__logo:hover,
+.copyright__logo:focus {
+  fill: #283645;
+}
+
+.copyright__logo:active {
+  fill: #283645;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 150px;
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    padding-top: 0;
+  }
+
+  .copyright__text {
+    font-size: 18px;
+  }
 }

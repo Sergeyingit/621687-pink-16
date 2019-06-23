@@ -1,35 +1,79 @@
 .download {
   background-color: #1d2631;
-  min-width: 320px;
-  margin: 0 auto;
 }
 
 .download::before {
   content: "";
   display: block;
-  height: 394px;
+  height: 462px;
   background-image: url("../../img/iphone-hand-mobile@1x.png"),
     url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat,
     no-repeat;
-  background-position: 40% bottom,
+  background-position: 0 bottom,
     bottom center;
-  background-size: auto, cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/iphone-hand-mobile@2x.png"),
+      url("../../img/bg-back-mobile@2x.jpg");
+    background-size: 258px auto, 320px auto;
+  }
 }
 
 
 .download__content {
-  padding: 20px;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 26px;
+  padding-bottom: 30px;
 }
 
 .download__title {
   display: none;
 }
 
+.download__button {
+  margin-bottom: 32px;
+}
+
 .download__list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  display: flex;
+  width: 205px;
+  margin-bottom: 22px;
+}
+
+.download__list li:not(:nth-child(1)) {
+  margin-left: 35px;
+}
+
+.download__item {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+
+.download__item--apple {
+  background-image: url("../../img/logo-apple.svg");
+  width: 47px;
+  height: 56px;
+}
+
+.download__item--android {
+  background-image: url("../../img/logo-android.svg");
+  width: 43px;
+  height: 47px;
+  margin-top: 8px;
+}
+
+.download__item--windows {
+  background-image: url("../../img/logo-microsoft.svg");
+  width: 44px;
+  height: 41px;
+  margin-top: 12px;
 }
 
 .download__text {
@@ -49,49 +93,101 @@
   }
 
   .download {
-    background-color: transparent;
-    min-width: 660px;
-    height: 620px;
+    width: auto;
+    height: 730px;
     background-image: url("../../img/iphone-hand-tablet@1x.png"),
       url("../../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat,
       no-repeat;
     background-position: -20px bottom,
-      -270px -110px;
+      center;
     border: 1px solid transparent;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/iphone-hand-tablet@2x.png"),
+        url("../../img/bg-back-tablet@2x.jpg");
+      background-size: 700px auto, 1200px auto;
+    }
   }
 
   .download__content {
     width: 300px;
-    margin-top: 100px;
+    margin: 0;
+    padding: 0;
+    margin-top: 200px;
+    margin-left: 20px;
   }
 
   .download__title {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 48px;
     font-weight: 300;
     color: #ffffff;
     width: 210px;
     text-align: center;
     display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .download__button {
+    margin-bottom: 47px;
+  }
+
+  .download__list {
+    margin-bottom: 36px;
   }
 
   .download__text {
+    font-size: 18px;
     background-color: transparent;
+    width: 300px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .download {
     background-color: transparent;
-    min-width: 660px;
-    height: 620px;
+    width: auto;
+    height: 853px;
     background-image: url("../../img/iphone-hand-desktop@1x.png"),
       url("../../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat,
       no-repeat;
-    background-position: -20px bottom,
-      -270px -110px;
+    background-position: 98% bottom,
+      center;
     border: 1px solid transparent;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/iphone-hand-desktop@2x.png"),
+        url("../../img/bg-back-desktop@2x.jpg");
+      background-size: 1050px auto, 2560px auto;
+    }
+  }
+
+  .download__wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .download__content {
+    margin-top: 218px;
+    margin-left: 10px;
+  }
+
+  .download__title {
+    font-size: 50px;
+    line-height: 60px;
+    width: auto;
+    margin-bottom: 50px;
+  }
+
+  .download__button {
+    font-size: 21px;
+    margin-bottom: 67px;
+  }
+
+  .download__list {
+    margin-bottom: 55px;
   }
 }

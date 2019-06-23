@@ -1,0 +1,28 @@
+.slider {
+  position: relative;
+}
+
+.slider__controls {
+  width: 74px;
+  height: 30px;
+}
+
+.slider__controls label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(#283645, 0.3);
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.slider__controls label:hover,
+.slider__controls label:focus {
+  background-color: rgba(#283645, 0.6);
+}
+
+.slider__controls label:active {
+  background-color: rgba(#283645, 0.1);
+}
