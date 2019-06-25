@@ -67,6 +67,37 @@
   border-radius: 2px;
 }
 
+.button--form:hover,
+.button--form:focus {
+  background-color: #1c9b5e;
+}
+
+.button--form:active {
+  color: rgba(#ffffff, 0.3);
+}
+
+.button--form:disabled {
+  background-color: #e5e5e5;
+}
+
+.button--modal {
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 2px;
+}
+
+.button--modal:hover,
+.button--modal:focus {
+  background-color: #1c9b5e;
+}
+
+.button--modal:active {
+  color: rgba(#ffffff, 0.3);
+}
+
+
 @media (min-width: $tablet-width) {
   .button {
     width: 300px;
@@ -74,6 +105,10 @@
   }
 
   .button--form {
+    background-color: #2aab6d;
+  }
+
+  .button--modal {
     background-color: #2aab6d;
   }
 
@@ -93,5 +128,9 @@
 
   .button--reset {
     width: 182px;
+  }
+
+  .button--modal-succes {
+    width: 460px;
   }
 }
